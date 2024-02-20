@@ -1,0 +1,81 @@
+/* reseteo del modelo de caja */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* margenes en el body */
+body {
+    margin: 0;
+    /* scrol en el lado horizontal */
+    overflow-x: hidden;
+}
+
+/* margenes en los titulos */
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h5 {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+h6 {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* decoraciones */
+a {
+    text-decoration: none;
+}
+
+/* imagenes */
+img {
+    vertical-align: middle;
+    /* modo de prueba */
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* quitandole los margenes a los elementos */
+ul,
+ol,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}

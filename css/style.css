@@ -1,0 +1,137 @@
+/* variables */
+:root{
+    --nutmeg: #854632;
+    --dark-raspberry: #7B284F;
+    --white: #FFFFFF;
+    --rose-white: #FFF5FA;
+    --eggshell: #F3E6D8;
+    --light-grey: #E4DED8;
+    --wenge-brown: #796E63;
+    --dark-charcoal: #302D2C;
+    --fuente-outfit: "Outfit", sans-serif;
+    /* 400, 600, 700 */
+    --fuente-young: "Young Serif", serif;
+}
+
+body {
+    background-color: var(--eggshell);
+    font-family: var(--fuente-outfit);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--fuente-young);
+}
+
+ul {
+    /* lo mejor para las listas */
+    list-style-position: inside;
+}
+
+hr {
+    border-color: var(--light-grey);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 738px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.tarjeta-contenido {
+    padding: 16px;
+}
+
+.tarjeta-contenido h1, p {
+    margin-bottom: 30px;
+}
+
+.tarjeta-preparacion {
+    margin-bottom: 20px;
+    padding: 25px 20px;
+    background-color: var(--rose-white);
+}
+
+.tarjeta-preparacion h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: var(--fuente-outfit);
+    color: var(--dark-raspberry);
+}
+
+.tarjeta-preparacion ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--wenge-brown);
+}
+
+.tarjeta-listas-item {
+    margin-bottom: 20px;
+}
+
+.tarjeta-listas-item h2 {
+    margin-bottom: 20px;
+    color: var(--nutmeg);
+}
+
+.tarjeta-listas-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--wenge-brown);
+}
+
+.tarjeta-tabla h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--nutmeg);
+}
+
+.tarjeta-tabla p {
+    color: var(--wenge-brown);
+}
+
+.tarjeta-valores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjeta-valores p {
+    margin: 10px;
+}
+
+.tarjeta-valores p strong {
+    color: var(--nutmeg);
+}
+
+/* media query */
+@media(min-width: 1024px) {
+    .tarjeta-figure {
+        margin-bottom: 30px;
+    }
+
+    .tarjeta-img {
+        border-radius: 10px;
+    }
+
+    .tarjeta {
+        margin: 50px;
+        padding: 40px;
+    }
+
+    .tarjeta-contenido {
+        padding: 0;
+    }
+}
